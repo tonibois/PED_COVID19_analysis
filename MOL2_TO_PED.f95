@@ -1,4 +1,4 @@
-        PROGRAM MOL2_CONVERT
+        PROGRAM MOL2PED
         character*100 cabmol,nom_mol,cabmol2,fitxer
         character*11 cod
         character*4 orb(3000)
