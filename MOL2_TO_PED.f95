@@ -8,7 +8,6 @@
         real xc,yc,zc,d(3000),u11,u12,u13,u14,u15,u16,u21,u22,u23,u24,u25,u26
         real u32,u33,u43,u44,u34,u51,u52,u53,u54,pc(20)
                 
-!       Obrim els fitxers de llista classificada i mol2 per tal de fer la lectura
 	contador=0
         fitxer='query.mol2'
         inputstat=0
@@ -102,28 +101,17 @@
          enddo
        enddo    
 
-        pc(1)=u(1)!+u(int(k/100)*1-1))/2d0
-        ! percentil 5%
-        pc(2)=u(2)!(u(floor(k/100.*5.)+1)+u(floor(k/100.*5.)+2))/2d0!+u(int(k/100)*5-1))/2d0
-        ! percentil 10%
-        pc(3)=u(3)!(u(floor(k/100.*10.)+1)+u(floor(k/100.*10.)+2))/2d0!u(int(k/100*10)+1)!+u(int(k/100)*10-1))/2d0        
-		! percentil 20%
-        pc(4)=u(4)!(u(floor(k/100.*20.)+1)+u(floor(k/100.*20.)+2))/2d0!+u(int(k/100)*20-1))/2d0
-        ! percentil 30%
-        pc(5)=u(5)!(u(floor(k/100.*30.)+1)+u(floor(k/100.*30.)+2))/2d0
-        ! percentil 50%
-        pc(6)=u(6)!(u(floor(k/100.*50.)+1)+u(floor(k/100.*50.)+2))/2d0        
-        ! percentil 70%
-        pc(7)=u(k-5)!(u(floor(k/100.*70.)+1)+u(floor(k/100.*70.)+2))/2d0      
-        ! percentil 80%
-        pc(8)=u(k-4)!(u(floor(k/100.*80.)+1)+u(floor(k/100.*80.)+2))/2d0         
-        ! percentil 90%
-        pc(9)=u(k-3)!(u(floor(k/100.*90.)+1)+u(floor(k/100.*90.)+2))/2d0       
-        ! percentil 95%
-        pc(10)=u(k-2)!(u(floor(k/100.*95.)+1)+u(floor(k/100.*98.)+1))/2d0         
-        ! percentil 99%
-        pc(11)=u(k-1)!(u(floor(k/100.*98.)+1)+u(k))/2d0  
-        ! max
+        pc(1)=u(1)
+        pc(2)=u(2)
+        pc(3)=u(3)        
+        pc(4)=u(4)
+        pc(5)=u(5)
+        pc(6)=u(6)       
+        pc(7)=u(k-5)      
+        pc(8)=u(k-4)       
+        pc(9)=u(k-3)    
+        pc(10)=u(k-2)       
+        pc(11)=u(k-1)
         pc(12)=u(k)
                
         end
