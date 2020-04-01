@@ -61,7 +61,7 @@ for file in os.listdir(directory):
             if(index2>index):
                 dij=((row['x']-row2['x'])**2+(row['y']-row2['y'])**2+(row['z']-row2['z'])**2)**0.5
                 if(dij > 1.0):
-                    Eij.append(row['Charge']*row2['Charge']/dij)
+                    Eij.append(row['Charge']*row2['Charge']/dij*14.4)
 
     PED=[]
     Eij.sort(reverse = True)
@@ -89,7 +89,7 @@ for file in os.listdir(directory):
                 if(index2>index):
                     dij=((row['x']-row2['x'])**2+(row['y']-row2['y'])**2+(row['z']-row2['z'])**2)**0.5
                     if(dij > fmin) & (dij < fmax):
-                        Eij.append(row['Charge']*row2['Charge']/dij)
+                        Eij.append(row['Charge']*row2['Charge']/dij*14.4)
                 
         PED2=[]
         Eij.sort(reverse = True)
