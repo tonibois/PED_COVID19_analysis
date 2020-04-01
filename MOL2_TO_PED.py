@@ -1,11 +1,13 @@
 # ********************************************************************************************************************************
-# *************************** A VIRTUAL SCREENING SOFTWARE BASED ON PED MOLECULAR DESCRIPTORS ************************************
+# *************************** COMPUTING OF PED MOLECULAR DESCRIPTORS *************************************************************
 # ********************************************************************************************************************************
 # Antonio Oliver Gelabert ( ORCID : http://orcid.org/0000-0001-8571-2733 )
 # March, 2020
 # For more details and citation : https://www.nature.com/articles/srep43738
 # *******************************************************************************************************************************
-# PARAMETERS
+# INPUT : a set of mol2 structure files in the same directory
+# OUTPUT : a set of 12 descriptors provided by PED methodology that uses spatial coordinates and molecular partial charges
+# PARAMETERS : fmin : filter of minimum distance between atoms (by default, 1 Amstrong)
 #
 # EXAMPLE USAGE
 
